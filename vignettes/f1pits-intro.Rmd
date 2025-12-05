@@ -1,0 +1,66 @@
+---
+title: "f1pits-intro"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{f1pits-intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 5,       # ancho en pulgadas
+  fig.height = 2.5,       # alto en pulgadas
+  dpi = 120             # resolution
+)
+```
+
+```{r setup}
+library(f1pits)
+```
+
+# Vignette Info. Introduction:
+
+The `f1pits` package provides datasets of Formula 1 race pit stops, extracted from [DHL website](https://inmotion.dhl/en/formula-1/fastest-pit-stop-award) and a function to visualize pit stop data.
+
+This package can be considered complementary to the `f1dataR` package, which provides Formula 1 race data. You can download the package in [GitHub](https://github.com/Jordan-Soria/f1pits).
+
+# Exemple to use:
+
+## Step 1: Pit Stops data
+
+To extract the pit stop data for a specific race or an entire season, use the `pits()` function. Check the documentation for the different arguments of the function.
+
+```{r message=TRUE, warning=TRUE}
+# Accessing the data, for example, round 1, Australian GP 2025:
+
+pits(1,2025) -> pitdata
+
+pitdata
+```
+
+The output generated is a tibble containing the columns:
+
+**Pos.** (position according to pit stop time), **Team**, **Driver**, **Time (sec)** is the time (in seconds) of each pitstop, **Lap** (lap of the race; does NOT include sprint sessions), and **Points** (DHL points. If a driver makes more than one pit stop among the top 10 fastest, the second and subsequent pit stops by that driver do not receive points).
+
+## Step 2 (if you want): Plotting
+
+The `f1pits` package includes the `pitplot()` function, which takes the data obtained from `pits()` and produces a ggplot object to visualize pit stop performance. Remember that if you want to provide your own data, the input must be a tibble (see the documentation of `pits()`). Check the documentation for the different arguments of `pitplot()` before using it.
+
+```{r message=TRUE, warning=TRUE}
+# Plotting the data:
+
+pitplot(pitdata,1) -> pitplot_pitdata
+
+pitplot_pitdata
+```
+
+Finally, if you want a fun text for your plot, run the 'pitart()' function in the title_text argument or, for example, title_text = paste0(aaa,"&nbsp;&nbsp;&nbsp;&nbsp;Pit Stop data").
+
+# Citations
+
+This package makes extensive use of **'dplyr'** for data manipulation and **'ggplot2'** for plotting the data. **'httr'** and **'jsonlite'** also to access my repository data. **'f1dataR'** has inspired me to create this package as a complement.
+
+`r format(citation("f1pits"))`
