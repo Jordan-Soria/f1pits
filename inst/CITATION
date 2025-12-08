@@ -3,22 +3,11 @@
 citHeader("To cite this package in publications use:")
 
 ## Citation for your own package
-citEntry(
-  entry    = "Manual",
-  title    = "f1pits: F1 Pit Stop Datasets",
-  author   = person("José", "Jordán-Soria"),
-  year     = "2025",
-  note     = "Formula 1 pit stop data. The package provides information on teams and drivers across seasons (2025 or higher). It also includes a function to visualize pit stop performance.",
-  url      = "https://github.com/Jordan-Soria/f1pits"
-  )
-
-## List of packages to cite
-packages_to_cite <- c("dplyr", "ggplot2", "readr", "tibble", "httr", "jsonlite", "f1dataR")
-
-## Loop to automatically include citations
-for(pkg in packages_to_cite) {
-  c <- citation(pkg)
-  for(i in seq_along(c)) {
-    citEntry(c[[i]])
-  }
-}
+bibentry(
+  bibtype = "Manual",
+  title   = "f1pits: F1 Pit Stop Datasets",
+  author  = person("José", "Jordán-Soria"),
+  year    = "2025",
+  note    = "Formula 1 pit stop data. The package provides information on teams and drivers across seasons (2025 or higher). It also includes a function to visualize pit stop performance.",
+  url     = "https://github.com/Jordan-Soria/f1pits"
+)
