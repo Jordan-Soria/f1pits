@@ -18,8 +18,8 @@ test_that("pitart() returns correct ASCII for n = 1:4", {
 
 # Test: n fuera de rango da error
 test_that("pitart() stops if n is not 1:4", {
-  expect_error(pitart(0), "n must be an integer from 1 to 4")
-  expect_error(pitart(5), "n must be an integer from 1 to 4")
+  expect_error(pitart(0), "n must be an integer from 1 to 5")
+  expect_error(pitart(6), "n must be an integer from 1 to 5")
 })
 
 # Test: missing n se maneja correctamente (mensaje) y retorna ASCII art

@@ -10,7 +10,7 @@ ASCII string
 pitart(n = 1)
 }
 \arguments{
-\item{n}{Integer. ASCII pit stop to generate. From 1 (by default) to 4}
+\item{n}{Integer. ASCII pit stop to generate. From 1 (by default) to 5}
 }
 \value{
 A string containing the ASCII art of a F1 pit stop
@@ -22,5 +22,5 @@ Funny ASCII F1 pitstop for title_text argument in pitplot() function
 pitart(1)
 pitart(2)
 pitart(3)
-pitart(4)
+pitart(5)
 }

@@ -1,6 +1,24 @@
-# f1pits 0.1.0
+# f1pits 1.2.0
 
-## f1pits 0.1.0 --- 2025-12-04
+### Changes
+
+- Available full pitstop datasets since 2019
+- `pitplot()` Team Toro Rosso color added
+- `pitplot()` Team Racing Point color added
+- `pitplot()` Team Renault color added
+- `pitchamp()` function added.
+
+## f1pits 0.2.0
+
+### Changes
+
+- Available full pitstop datasets from 2023 and 2024
+- `pitplot()` Team AlphaTauri color added
+- `pitplot()` Team Alfa Romeo color added
+- `pitplot()` Team Aston Martin color changed to forestgreen
+- `pitart()` added element
+
+## f1pits 0.1.0
 
 ### Changes
 

@@ -23,7 +23,7 @@ A ggplot object
 Plot pit stop results (MUST BE in tibble format)
 }
 \examples{
-\dontrun{
+\donttest{
 pitplot(pits(10, 2025), 1, "Title: Hello world!")
 }
 }

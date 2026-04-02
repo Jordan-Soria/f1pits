@@ -9,7 +9,7 @@
 #' @param title_text Text for the plot title, in quotes (" ") (if is omitted, a default text will be used).
 #' @return A ggplot object
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' pitplot(pits(10, 2025), 1, "Title: Hello world!")
 #' }
 #' @export
@@ -37,12 +37,17 @@ pitplot <- function(pits_data, type=3, title_text=NULL) {
       Team == "Ferrari" ~ "red",
       Team == "Red Bull"  ~ "#A303FF",
       Team == "McLaren" ~ "orange",
-      Team == "Aston Martin"  ~ "darkgreen",
+      Team == "Renault" ~ "yellow",
+      Team == "Racing Point" ~ "#FA028A",
+      Team == "Toro Rosso" ~ "blue",
+      Team == "Aston Martin"  ~ "forestgreen",
       Team == "Racing Bulls"  ~ "white",
       Team == "RB"  ~ "white",
+      Team == "AlphaTauri"  ~ "#87A8E0",
       Team == "Alpine"  ~ "#FA028A",
       Team == "Williams"  ~ "#03A3FF",
       Team == "Sauber"  ~ "green",
+      Team == "Alfa Romeo"  ~ "brown",
       Team == "Audi"  ~ "brown",
       Team == "Haas"  ~ "grey",
       Team == "Cadillac"  ~ "#B9975B",

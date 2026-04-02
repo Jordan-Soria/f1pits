@@ -8,6 +8,6 @@ bibentry(
   title   = "f1pits: F1 Pit Stop Datasets",
   author  = person("José", "Jordán-Soria"),
   year    = "2025",
-  note    = "Formula 1 pit stop data. The package provides information on teams and drivers across seasons (2025 or higher). It also includes a function to visualize pit stop performance.",
+  note    = "Formula 1 pit stop data. The package provides information on teams and drivers across seasons (2019 or higher). It also includes a function to visualize pit stop performance.",
   url     = "https://github.com/Jordan-Soria/f1pits"
 )

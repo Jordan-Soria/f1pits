@@ -9,7 +9,7 @@ pits(round, year)
 \arguments{
 \item{round}{Number of the race (integer), set of races a:b (vector) o "all" (character)}
 
-\item{year}{Year of the race (integer). 2025 or higher}
+\item{year}{Year of the race (integer). 2019 or higher}
 }
 \value{
 A tibble containing the pit stops values of the specified race(s)
@@ -18,9 +18,8 @@ A tibble containing the pit stops values of the specified race(s)
 Pit stop results of a race or set
 }
 \examples{
-\dontrun{
+\donttest{
 pits(10, 2025)
 pits(1:2, 2025)
-pits("all",2025)
 }
 }
