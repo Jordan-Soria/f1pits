@@ -1,7 +1,7 @@
 #' @title Pit stop standings by season
 #' @description Pit stop official standings by season (since 2015)
-#' @param year Season pit stop standings (integer). 2015 or higher
-#' @return A tibble containing the pit stop season standings points (or wins in 2015 and 2016)
+#' @param year Season pit stop standings (integer), set of years a:b (vector) or "all" (character). 2015 or higher.
+#' @return A tibble containing the pit stop season standings points (or wins for 2015 and 2016)
 #' @examples
 #' \donttest{
 #' pitchamp(2015)

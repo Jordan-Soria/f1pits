@@ -7,7 +7,7 @@
 pits(round, year)
 }
 \arguments{
-\item{round}{Number of the race (integer), set of races a:b (vector) o "all" (character)}
+\item{round}{Number of the race (integer), set of races a:b (vector) or "all" (character)}
 
 \item{year}{Year of the race (integer). 2019 or higher}
 }

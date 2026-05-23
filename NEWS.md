@@ -1,4 +1,20 @@
-# f1pits 1.2.0
+# f1pits 1.3.1
+
+- Minor changes in vignette
+- `pits()` ignores round = 12, year = 2021 (No pitstop data)
+- `pitplot()` in subtitle shows round and year
+- `pitelo()` added batch or sequential calculation
+- `pitelo()` parameter c added to ELO calculation
+- `pitelo()` added article references and description details
+- `pitelo()` edited function and example
+
+## f1pits 1.3.0
+
+### Changes
+
+- `pitelo()` function added.
+
+## f1pits 1.2.0
 
 ### Changes
 

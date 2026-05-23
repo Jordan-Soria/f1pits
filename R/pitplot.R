@@ -73,7 +73,7 @@ pitplot <- function(pits_data, type=3, title_text=NULL) {
       coord_cartesian(ylim = c(0, round(max(pits_data3$`Time (sec)`)+1.5))) + scale_y_continuous(breaks = c(1,2,3,5,10,15,20)) +
       labs(
         title=paste0(title_text),
-        subtitle = paste0("Pit stops data (Total: ", nrow(pits_data3),")\n","Best pit stop: ",pits_data3$Team[1],", ",pits_data3$`Time (sec)`[1], " s, lap ",pits_data3$Lap[1]),
+        subtitle = paste0("Pit stops data (Total: ", nrow(pits_data3),")\n","Best pit stop: ",pits_data3$Team[1],", ",pits_data3$`Time (sec)`[1], " s, lap ",pits_data3$Lap[1], ", round ", pits_data3$Round[1], ", year ", pits_data3$Year[1]),
         x = "Driver and lap (l.)",
         y = "Pit Stop time (s)"
       ) +
@@ -127,7 +127,7 @@ pitplot <- function(pits_data, type=3, title_text=NULL) {
       coord_cartesian(ylim = c(0, round(max(pits_data3$mean_time)+1.5))) + scale_y_continuous(breaks = c(1,2,3,5,10,15,20)) +
       labs(
         title = paste0(title_text),
-        subtitle = paste0("Average pit stop by team (Total: ",nrow(pits_data2b),")\n","Best pit stop: ",pits_data2b$Driver[1]," - ",pits_data2b$Team[1],", ",pits_data2b$`Time (sec)`[1], " s, lap ",pits_data2b$Lap[1]),
+        subtitle = paste0("Average pit stop by team (Total: ",nrow(pits_data2b),")\n","Best pit stop: ",pits_data2b$Driver[1]," - ",pits_data2b$Team[1],", ",pits_data2b$`Time (sec)`[1], " s, lap ",pits_data2b$Lap[1], ", round ", pits_data2b$Round[1], ", year ", pits_data2b$Year[1]),
         x = "Team",
         y = "Pit Stop time (s, mean \u00B1 sd)"
       ) +
@@ -181,7 +181,7 @@ pitplot <- function(pits_data, type=3, title_text=NULL) {
       coord_cartesian(ylim = c(0, round(max(pits_data3$mean_time)+1.5))) + scale_y_continuous(breaks = c(1,2,3,5,10,15,20)) +
       labs(
         title = paste0(title_text),
-        subtitle = paste0("Pit stops data (Total: ",nrow(pits_data2b),")\n","Best pit stop: ",pits_data2b$Driver[1]," - ", pits_data2b$Team[1],", ",pits_data2b$`Time (sec)`[1], " s, lap ",pits_data2b$Lap[1]),
+        subtitle = paste0("Pit stops data (Total: ",nrow(pits_data2b),")\n","Best pit stop: ",pits_data2b$Driver[1]," - ", pits_data2b$Team[1],", ",pits_data2b$`Time (sec)`[1], " s, lap ",pits_data2b$Lap[1], ", round ", pits_data2b$Round[1], ", year ", pits_data2b$Year[1]),
         x = "Driver",
         y = "Pit Stop time (s, mean \u00B1 sd)"
       ) +

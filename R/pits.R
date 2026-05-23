@@ -1,6 +1,6 @@
 #' @title Pit stops of a race or set
 #' @description Pit stop results of a race or set
-#' @param round Number of the race (integer), set of races a:b (vector) o "all" (character)
+#' @param round Number of the race (integer), set of races a:b (vector) or "all" (character)
 #' @param year Year of the race (integer). 2019 or higher
 #' @return A tibble containing the pit stops values of the specified race(s)
 #' @examples
@@ -48,6 +48,17 @@ pits <- function(round, year) {
     }
   }
 
+  ignored_round12 <- FALSE
+
+  if (identical(year, 2021)) {
+
+    removed_rounds <- rounds_available[rounds_to_use] == 12
+
+    if (any(removed_rounds)) {
+      rounds_to_use <- rounds_to_use[!removed_rounds]
+      ignored_round12 <- TRUE
+    }
+  }
 
   # Mensajes por cada round usando load_schedule
   schedule <- load_schedule(season = year)
@@ -74,6 +85,10 @@ pits <- function(round, year) {
 
   # Combinar todos los rounds solicitados
   result <- bind_rows(lapply(rounds_to_use, get_single_round))
+
+  if (ignored_round12 == TRUE) {
+    warning("\nBelgian Grand Prix 2021 / Round: 12 ignored (No pit stop data)")
+  }
 
   rm(list = c("get_single_round", "schedule", "race_files",
               "rounds_available", "ord", "rounds_to_use"), envir = environment())
