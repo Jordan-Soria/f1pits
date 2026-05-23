@@ -11,8 +11,8 @@ visualize pit stop performance.
 
 The `f1pits` package provides datasets of Formula 1 race pit stops
 (since 2019), extracted from [DHL
-website](https://inmotion.dhl/en/formula-1/fastest-pit-stop-award) and a
-function to visualize pit stop data.
+website](https://inmotion.dhl/en/formula-1/fastest-pit-stop-award) and
+functions to visualize pit stop data.
 
 This package can be considered complementary to the `f1dataR` package,
 which provides Formula 1 race data. You can download `f1pits` package in
