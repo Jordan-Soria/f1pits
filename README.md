@@ -7,6 +7,8 @@ The package provides information on teams and drivers across seasons
 (since 2019), pit stop awards (since 2015) and includes functions to
 visualize pit stop performance.
 
+[![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/f1pits?color=yellow)](https://r-pkg.org/pkg/f1pits)
+
 # Vignette Info. Introduction:
 
 The `f1pits` package provides datasets of Formula 1 race pit stops
