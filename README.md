@@ -7,6 +7,7 @@ The package provides information on teams and drivers across seasons
 (since 2019), pit stop awards (since 2015) and includes functions to
 visualize pit stop performance.
 
+[![CRANstatus](https://www.r-pkg.org/badges/version/f1pits)](https://CRAN.R-project.org/package=f1pits)
 [![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/last-week/f1pits?color=yellow)](https://r-pkg.org/pkg/f1pits)
 
 # Vignette Info. Introduction:
