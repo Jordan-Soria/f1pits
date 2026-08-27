@@ -9,7 +9,7 @@ pits(round, year)
 \arguments{
 \item{round}{Number of the race (integer), set of races a:b (vector) or "all" (character)}
 
-\item{year}{Year of the race (integer). 2019 or higher}
+\item{year}{Year of the race (integer). 2018 or higher}
 }
 \value{
 A tibble containing the pit stops values of the specified race(s)
