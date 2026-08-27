@@ -13,7 +13,7 @@ visualize pit stop performance.
 # Vignette Info. Introduction:
 
 The `f1pits` package provides datasets of Formula 1 race pit stops
-(since 2019), extracted from [DHL
+(since 2018), extracted from [DHL
 website](https://inmotion.dhl/en/formula-1/fastest-pit-stop-award) and
 functions to visualize pit stop data.
 
