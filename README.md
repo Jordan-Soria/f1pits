@@ -4,7 +4,7 @@
 Formula 1 pit stop data.
 
 The package provides information on teams and drivers across seasons
-(since 2019), pit stop awards (since 2015) and includes functions to
+(since 2018), pit stop awards (since 2015) and includes functions to
 visualize pit stop performance.
 
 [![CRANstatus](https://www.r-pkg.org/badges/version/f1pits)](https://CRAN.R-project.org/package=f1pits)
