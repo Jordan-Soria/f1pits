@@ -1,4 +1,12 @@
-# f1pits 1.3.1
+# f1pits 1.3.2
+
+- Available full pitstop datasets since 2018
+- Minor changes in vignette
+- `pitplot()` Team Force India color added
+
+## f1pits 1.3.1
+
+### Changes
 
 - Minor changes in vignette
 - `pits()` ignores round = 12, year = 2021 (No pitstop data)
