@@ -39,6 +39,7 @@ pitplot <- function(pits_data, type=3, title_text=NULL) {
       Team == "McLaren" ~ "orange",
       Team == "Renault" ~ "yellow",
       Team == "Racing Point" ~ "#FA028A",
+      Team == "Force India" ~ "#FA028A",
       Team == "Toro Rosso" ~ "blue",
       Team == "Aston Martin"  ~ "forestgreen",
       Team == "Racing Bulls"  ~ "white",

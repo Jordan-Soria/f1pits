@@ -1,7 +1,7 @@
 #' @title Pit stops of a race or set
 #' @description Pit stop results of a race or set
 #' @param round Number of the race (integer), set of races a:b (vector) or "all" (character)
-#' @param year Year of the race (integer). 2019 or higher
+#' @param year Year of the race (integer). 2018 or higher
 #' @return A tibble containing the pit stops values of the specified race(s)
 #' @examples
 #' \donttest{
